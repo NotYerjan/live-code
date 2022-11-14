@@ -1,0 +1,51 @@
+.toggler {
+  width: calc(42px + 42px + 8px);
+  height: 50px;
+  background-color: bisque;
+  border-radius: 25px;
+  position: relative;
+  border: 2px solid black;
+  transition: all 0.3s ease-in;
+}
+.circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 0.3s ease-in;
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.images div {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.sun {
+  background-color: yellow;
+}
+.moon {
+  background-color: blue;
+}
+
+/*!!! ACTIVE CLASS*/
+.toggler.active .circle {
+  transform: translateX(42px);
+}
+
+.toggler.active {
+  background-color: green;
+}
